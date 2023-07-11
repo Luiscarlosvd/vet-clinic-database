@@ -25,3 +25,10 @@ UPDATE animals SET species = 'pokemon' WHERE species IS NULL;
 Select * from animals;
 COMMIT;
 Select * from animals;
+
+/* Delete all records */
+
+BEGIN;
+DELETE FROM animals;
+ROLLBACK;
+SELECT * FROM animals;
