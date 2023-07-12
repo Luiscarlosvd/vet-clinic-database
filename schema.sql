@@ -29,3 +29,16 @@ CREATE TABLE species (
     name VARCHAR(100),
     PRIMARY KEY(id)
 );
+
+/* UPDATE animals table */
+
+ALTER TABLE animals ALTER COLUMN id SET NOT NULL;
+ALTER TABLE animals ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (START WITH 11);
+
+ALTER TABLE animals
+DROP COLUMN species,
+ADD COLUMN species_id INT,
+ADD COLUMN owner_id INT,
+ADD PRIMARY KEY (id),
+ADD CONSTRAINT fk_animals_species FOREIGN KEY (species_id) REFERENCES species (id),
+ADD CONSTRAINT fk_animals_owners FOREIGN KEY (owner_id) REFERENCES owners (id);
