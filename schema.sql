@@ -52,3 +52,24 @@ CREATE TABLE vets (
    date_of_graduation DATE, 
    PRIMARY KEY(id)
 );
+
+/* specializations table */
+
+CREATE TABLE specializations (
+   id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+   vet_id INT,
+   species_id INT,
+   FOREIGN KEY (vet_id) REFERENCES vets (id),
+   FOREIGN KEY (species_id) REFERENCES species (id)
+);
+
+/* visits table */
+
+CREATE TABLE visits (
+  id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  vet_id INT,
+  animal_id INT,
+  visit_date DATE,
+  FOREIGN KEY (vet_id) REFERENCES vets (id),
+  FOREIGN KEY (animal_id) REFERENCES animals (id)
+);
