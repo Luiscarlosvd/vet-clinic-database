@@ -42,3 +42,13 @@ ADD COLUMN owner_id INT,
 ADD PRIMARY KEY (id),
 ADD CONSTRAINT fk_animals_species FOREIGN KEY (species_id) REFERENCES species (id),
 ADD CONSTRAINT fk_animals_owners FOREIGN KEY (owner_id) REFERENCES owners (id);
+
+/* Vets table */
+
+CREATE TABLE vets (
+   id INT NOT NULL GENERATED ALWAYS AS IDENTITY,
+   name VARCHAR(150),
+   age INT,
+   date_of_graduation DATE, 
+   PRIMARY KEY(id)
+);
