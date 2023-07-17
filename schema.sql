@@ -53,3 +53,5 @@ CREATE INDEX animal_id_desc ON visits(animal_id);
 CREATE INDEX vet_id_desc ON visits(vet_id);
 
 CREATE INDEX visit_id_desc ON visits(id);
+
+CREATE INDEX visit_vet_id_desc ON visits(id, vet_id);
