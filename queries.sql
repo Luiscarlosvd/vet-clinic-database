@@ -121,3 +121,8 @@ GROUP BY spe.name
 ORDER BY visits_with_specie DESC
 LIMIT 1;
 
+-- Day 1 Week 2
+SELECT COUNT(animal_id) FROM visits where animal_id = 4;
+
+-- test 2
+SELECT * FROM visits where vet_id = 2;
