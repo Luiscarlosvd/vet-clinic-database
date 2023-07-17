@@ -42,3 +42,8 @@ ADD COLUMN owner_id INT,
 ADD PRIMARY KEY (id),
 ADD CONSTRAINT fk_animals_species FOREIGN KEY (species_id) REFERENCES species (id),
 ADD CONSTRAINT fk_animals_owners FOREIGN KEY (owner_id) REFERENCES owners (id);
+
+
+-- Day 1 week 2
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
