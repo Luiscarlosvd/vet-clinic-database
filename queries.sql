@@ -62,13 +62,6 @@ SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id JOI
 SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE escape_attempts = 0 AND owners.full_name = 'Dean Winchester';
 SELECT owners.full_name, COUNT(owner_id) as max_animals FROM animals JOIN owners ON animals.owner_id = owners.id GROUP BY owners.full_name ORDER BY max_animals DESC LIMIT 1;
 
-
--- Day 1 Week 2
-
-SELECT COUNT(animal_id) FROM visits where animal_id = 4;
-
--- test 2
-SELECT * FROM visits where vet_id = 2;
 /* Queries in JOIN tables */
 
 SELECT a.name, v.visit_date 
@@ -128,3 +121,8 @@ GROUP BY spe.name
 ORDER BY visits_with_specie DESC
 LIMIT 1;
 
+-- Day 1 Week 2
+SELECT COUNT(animal_id) FROM visits where animal_id = 4;
+
+-- test 2
+SELECT * FROM visits where vet_id = 2;
