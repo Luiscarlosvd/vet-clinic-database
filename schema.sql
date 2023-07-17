@@ -55,3 +55,33 @@ CREATE INDEX vet_id_desc ON visits(vet_id);
 CREATE INDEX visit_id_desc ON visits(id);
 
 CREATE INDEX visit_vet_id_desc ON visits(id, vet_id);
+/* Vets table */
+
+CREATE TABLE vets (
+   id INT NOT NULL GENERATED ALWAYS AS IDENTITY,
+   name VARCHAR(150),
+   age INT,
+   date_of_graduation DATE, 
+   PRIMARY KEY(id)
+);
+
+/* specializations table */
+
+CREATE TABLE specializations (
+   id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+   vet_id INT,
+   species_id INT,
+   FOREIGN KEY (vet_id) REFERENCES vets (id),
+   FOREIGN KEY (species_id) REFERENCES species (id)
+);
+
+/* visits table */
+
+CREATE TABLE visits (
+  id INT NOT NULL GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  vet_id INT,
+  animal_id INT,
+  visit_date DATE,
+  FOREIGN KEY (vet_id) REFERENCES vets (id),
+  FOREIGN KEY (animal_id) REFERENCES animals (id)
+);
