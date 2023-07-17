@@ -66,3 +66,6 @@ SELECT owners.full_name, COUNT(owner_id) as max_animals FROM animals JOIN owners
 -- Day 1 Week 2
 
 SELECT COUNT(animal_id) FROM visits where animal_id = 4;
+
+-- test 2
+SELECT * FROM visits where vet_id = 2;
