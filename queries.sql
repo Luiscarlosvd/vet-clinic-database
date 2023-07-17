@@ -61,3 +61,8 @@ SELECT species.name, COUNT(species_id) FROM animals JOIN species ON animals.spec
 SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id JOIN species ON animals.species_id = species.id WHERE species.name = 'Digimon' AND owners.full_name = 'Jennifer Orwell';
 SELECT animals.name FROM animals JOIN owners ON animals.owner_id = owners.id WHERE escape_attempts = 0 AND owners.full_name = 'Dean Winchester';
 SELECT owners.full_name, COUNT(owner_id) as max_animals FROM animals JOIN owners ON animals.owner_id = owners.id GROUP BY owners.full_name ORDER BY max_animals DESC LIMIT 1;
+
+
+-- Day 1 Week 2
+
+SELECT COUNT(*) FROM visits where animal_id = 4;
