@@ -40,3 +40,9 @@ CREATE TABLE invoice_items (
   treatment_id INTEGER REFERENCES treatments(id),
   PRIMARY KEY (id)
 );
+
+CREATE TABLE medical_history_treatments (
+  medical_history_id INTEGER REFERENCES medical_histories(id),
+  treatment_id INTEGER REFERENCES treatments(id),
+  PRIMARY KEY (medical_history_id, treatment_id)
+);
