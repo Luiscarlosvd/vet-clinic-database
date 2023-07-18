@@ -24,5 +24,12 @@ CREATE TABLE invoices (
   PRIMARY KEY (id)
 );
 
+CREATE TABLE treatments (
+  id INTEGER GENERATED ALWAYS AS IDENTITY ,
+  type VARCHAR(255),
+  name VARCHAR(255),
+  PRIMARY KEY (id)
+);
+
 
 
