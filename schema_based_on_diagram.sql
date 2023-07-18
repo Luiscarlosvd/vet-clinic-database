@@ -31,5 +31,12 @@ CREATE TABLE treatments (
   PRIMARY KEY (id)
 );
 
-
-
+CREATE TABLE invoice_items (
+  id INTEGER GENERATED ALWAYS AS IDENTITY ,
+  unit_price DECIMAL,
+  quantity INTEGER,
+  total_price DECIMAL,
+  invoice_id INTEGER REFERENCES invoices(id),
+  treatment_id INTEGER REFERENCES treatments(id),
+  PRIMARY KEY (id)
+);
