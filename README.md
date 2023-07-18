@@ -17,7 +17,7 @@
     - [Usage](#usage)
     - [Run tests](#run-tests)
     - [Deployment](#deployment)
-  - [👥 Author ](#-author-)
+  - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -96,13 +96,21 @@ In order to clone this repository to your desired folder, run the commands below
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Luis Valera**
 
 - GitHub: [@Luiscarlosvd](https://github.com/Luiscarlosvd)
 - Twitter: [@Luiscarlosvd29](https://twitter.com/Luiscarlosvd29)
 - LinkedIn: [Luis Valera](https://www.linkedin.com/in/luis-valera-6a5749267/)
+
+👤 **Mohamed Gamil Eldimardash**
+
+- GitHub: [@Github](https://github.com/MMGGYY66)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohamed-eldimardash-0023a3b5/)
+- Twitter: [twitter](https://twitter.com/MOHAMEDELDIMARd)
+- Facebook: [facebook](https://www.facebook.com/MOHAMED.ELDIMARDASH/)
+- StackOverflow: [stackoverflow](https://stackoverflow.com/users/13605630/mohamed-gamil-eldimardash)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
