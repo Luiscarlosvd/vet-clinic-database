@@ -58,6 +58,6 @@ CREATE INDEX treatment_id ON invoice_items(treatment_id);
 
 CREATE INDEX patient_id ON medical_histories(patient_id);
 
-CREATE INDEX medical_history_id ON medical_history_treatments(medical_history_id);
+CREATE INDEX medical_hist_id ON medical_history_treatments(medical_history_id);
 
-CREATE INDEX treatment_id ON medical_history_treatments(treatment_id);
+CREATE INDEX treat_id ON medical_history_treatments(treatment_id);
