@@ -7,11 +7,11 @@ CREATE TABLE patients (
   PRIMARY KEY (id)
 );
 
-CREATE TABLE invoices (
+CREATE TABLE medical_histories (
   id INTEGER GENERATED ALWAYS AS IDENTITY ,
-  total_amount DECIMAL,
-  generated_at TIMESTAMP,
-  payed_at  TIMESTAMP,
-  medical_history_id INTEGER REFERENCES medical_histories(id), 
+  admited_at TIMESTAMP,
+  patient_id INTEGER REFERENCES patiens(id),
+  status VARCHAR(255),
   PRIMARY KEY (id)
 );
+
