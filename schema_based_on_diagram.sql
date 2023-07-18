@@ -46,3 +46,10 @@ CREATE TABLE medical_history_treatments (
   treatment_id INTEGER REFERENCES treatments(id),
   PRIMARY KEY (medical_history_id, treatment_id)
 );
+
+-- add indexes to all foreign keys
+CREATE INDEX medical_history_id ON invoices(medical_history_id);
+
+CREATE INDEX invoice_id ON invoice_items(invoice_id);
+
+CREATE INDEX treatment_id ON invoice_items(treatment_id);
